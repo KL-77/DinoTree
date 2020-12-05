@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+<title>DinoTree</title>
+<style>
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.banner {
+  width:auto;
+  text-align:center;
+  padding:50px;
+  background: linear-gradient(to top right, #0099ff 0%, #00c100 100%);
+  color: white;
+  letter-spacing: 3px;
+  font-size: 60;
+}
+.container {
+  margin: 50px;
+}
+h1 {
+  color: #008f4a;
+}
+.audionotice {
+  width: 509.75px;
+  height: 74px;
+  background-color:#fffa61;
+  opacity:80%;
+  font-size:30;
+  color:red;
+  position:fixed;
+  top: 630px;
+  left: 925px;
+  float:right;
+  padding:10px;
+  z-index:3;
+}
+button {
+  background-color:#004e78;
+  color:white;
+  padding:9px;
+  position:absolute;
+  border-radius: 5px;
+  border: none;
+  }
+button:hover {
+  background-color:#003b5c;
+}
+</style>
+</head>
+
+<body>
+
+<div class = "banner">DinoTree</div>
+
+<div class = "container">
+
+<h1>What is DinoTree?</h1>
+Hello, and welcome to DinoTree! We all know at least a little about dinosaurs, a diverse, amazing type of animal that existed from around 240 to 65 million years ago. The classification of the dinosaurs is very complicated. For those dinosaur enthusiasts who are eager to learn about dinosaur taxonomy, but simply cannot understand the huge nested relationships that appear, DinoTree provides a simple but accurate dinosaur classification chart. 
+<br><br>
+For each group, there is a picture of a dinosaur belonging to it and a button that can be clicked for information regarding the group, in the form of a short audio recording. DinoTree's classification chart is designed to look appealing and presents information in a concise manner.
+<br><br>
+Hope you find this useful, enjoy!
+<br><br>
+
+
+<h1>The Chart</h1>
+<img src = "/Users/keshav/Documents/IntraSchoolChallenge/TheCompleteTreeFinal2.png" width = "1250" height = "625"><br><br><br>
+
+
+<div class = "audionotice">
+
+Info here:
+<iframe id = "sauraudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/1aFTq4yCc_k_RZB-wtm8AG-gtwAgF7GyP/preview?usp=sharing"></iframe>
+<iframe id = "ornithaudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/1186GAngwrOdDgRs8CJ3mpfK2EVrGKcon/preview?usp=sharing"></iframe>
+<iframe id = "theroaudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/1j36DyIBuSh0Klw7abDU7XyJXrdIuLGBC/preview?usp=sharing"></iframe>
+<iframe id = "podomorphaudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/1pYc0_iVOvV771-q4Rit4iz3UDntDSBnE/preview?usp=sharing"></iframe>
+<iframe id = "cerapodaudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/11VQ1n9vzRpOuLBMs3Jo4cqb4Fe4visyQ/preview?usp=sharing"></iframe>
+<iframe id = "thyreoaudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/1fYO7kixDR8Ru2fukXa6g4EseiC6srnRb/preview?usp=sharing"></iframe>
+<iframe id = "ceratoaudio" style = "visibility:hidden;position:fixed;left:1071;" width = "350" height = "50" src = "https://drive.google.com/file/d/1fYO7kixDR8Ru2fukXa6g4EseiC6srnRb/preview?usp=sharing"></iframe>
+
+
+
+</div>
+
+<button style = "top:720px;left:430px;" onclick = "showthis('sauraudio');">Info</button>
+<button style = "top:720px;left:1065px;" onclick = "showthis('ornithaudio');">Info</button>
+<button style = "top:820px;left:320px;" onclick = "showthis('theroaudio')">Info</button>
+<button style = "top:820px;left:715px;" onclick = "showthis('podomorphaudio')">Info</button>
+<button style = "top:820px;left:950px;" onclick = "showthis('cerapodaudio')">Info</button>
+<button style = "top:820px;left:1175px;" onclick = "showthis('thyreoaudio')">Info</button>
+<button style = "top:1030px;left:105px;" onclick = "showthis('ceratoaudio')">Info</button>
+
+<script>
+function showthis(clade){
+  document.getElementById("sauraudio").style.visibility = "hidden";
+  document.getElementById("ornithaudio").style.visibility = "hidden";
+  document.getElementById("theroaudio").style.visibility = "hidden";
+  document.getElementById("podomorphaudio").style.visibility = "hidden";
+  document.getElementById("cerapodaudio").style.visibility = "hidden";
+  document.getElementById("thyreoaudio").style.visibility = "hidden";
+  document.getElementById("ceratoaudio").style.visibility = "hidden";
+  document.getElementById(clade).style.visibility = "visible";
+  
+}
+</script>
+
+
+<audio controls>
+  <source src="/Users/keshav/Documents/IntraSchoolChallenge/testsound.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+
+
+
+
+
+</div>
+</body>
+</html>
