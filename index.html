@@ -108,7 +108,16 @@ Info here:
   <source src="audio/CeratosauriaTalk.mp3" type="audio/mpeg">
   Your browser does not support the audio tag.
 </audio>
+  
+<audio controls id = "spinoaudio" style = "visibility:hidden;position:absolute;">
+  <source src="audio/SpinosauriaTalk.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
 
+<audio controls id = "carnoaudio" style = "visibility:hidden;position:absolute;">
+  <source src="audio/CarnosauriaTalk.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
 
 
 
@@ -121,6 +130,8 @@ Info here:
 <button style = "top:820px;left:950px;" onclick = "showthis('cerapodaudio')">Info</button>
 <button style = "top:820px;left:1175px;" onclick = "showthis('thyreoaudio')">Info</button>
 <button style = "top:1030px;left:105px;" onclick = "showthis('ceratoaudio')">Info</button>
+<button style = "top:1030px;left:213px;" onclick = "showthis('spinoaudio')">Info</button>
+<button style = "top:1030px;left:321px;" onclick = "showthis('carnoaudio')">Info</button>
 
 <script>
 function showthis(clade){
@@ -131,6 +142,8 @@ function showthis(clade){
   document.getElementById("cerapodaudio").style.visibility = "hidden";
   document.getElementById("thyreoaudio").style.visibility = "hidden";
   document.getElementById("ceratoaudio").style.visibility = "hidden";
+  document.getElementById("spinoaudio").style.visibility = "hidden";
+  document.getElementById("carnoaudio").style.visibility = "hidden";
   document.getElementById(clade).style.visibility = "visible";
   
 }
