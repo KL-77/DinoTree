@@ -148,6 +148,16 @@ Info here:
   <source src="audio/MarginocephaliaTalk.mp3" type="audio/mpeg">
   Your browser does not support the audio tag.
 </audio>
+  
+<audio controls id = "stegoaudio" style = "visibility:hidden;position:absolute;">
+  <source src="audio/StegosauriaTalk.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<audio controls id = "ankyaudio" style = "visibility:hidden;position:absolute;">
+  <source src="audio/AnkylosauriaTalk.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
 
 
 </div>
@@ -167,6 +177,8 @@ Info here:
 <button style = "top:1030px;left:768px;" onclick = "showthis('sauropodaudio')">Info</button>
 <button style = "top:1030px;left:896px;" onclick = "showthis('ornithopodaudio')">Info</button>
 <button style = "top:1030px;left:1004px;" onclick = "showthis('marginaudio')">Info</button>
+<button style = "top:1030px;left:1122px;" onclick = "showthis('stegoaudio')">Info</button>
+<button style = "top:1030px;left:1230px;" onclick = "showthis('ankyaudio')">Info</button>
 
 
 <script>
@@ -186,6 +198,8 @@ function showthis(clade){
   document.getElementById("sauropodaudio").style.visibility = "hidden";
   document.getElementById("ornithopodaudio").style.visibility = "hidden";
   document.getElementById("marginaudio").style.visibility = "hidden";
+  document.getElementById("stegoaudio").style.visibility = "hidden";
+  document.getElementById("ankyaudio").style.visibility = "hidden";
   document.getElementById(clade).style.visibility = "visible";
   
 }
