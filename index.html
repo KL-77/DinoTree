@@ -17,9 +17,24 @@ body {
   color: white;
   letter-spacing: 3px;
   font-size: 60;
+  animation-name:thebanner;
+  animation-duration:3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode:forwards;
 }
+@keyframes thebanner {
+  0%   {opacity: 0%;}
+  100% {opacity: 100%;}
 .container {
   margin: 50px;
+  animation-name:thecontainer;
+  animation-duration:3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode:forwards;
+  animation-delay: 1s;
+@keyframes thebanner {
+  0%   {opacity: 0%;}
+  100% {opacity: 100%;}
 }
 h1 {
   color: #008f4a;
@@ -48,6 +63,9 @@ button {
   }
 button:hover {
   background-color:#003b5c;
+}
+table, td {
+  border: 1px solid #00a3a3;
 }
 </style>
 </head>
@@ -205,7 +223,25 @@ function showthis(clade){
 }
 </script>
 
-
+<p>
+Click on the <button style = "position:relative;">Info</button> buttons to learn more about each group. An audio should appear in the "Info here:" box.<br>
+Click on the play button to start the audio.<br>
+Please make sure to stop the audio before going to another one.<br><br>
+<h1>Glossary</h1>
+<table cellpadding = "5" cellspacing = "0">
+<tr>
+  <td>Order</td>
+  <td>A type of taxonomical group. Kingdom Phylum Class <b>Order</b></td>
+</tr>
+<tr>
+  <td>Clade</td>
+  <td width = "300">Any arbitrary taxonomical group.</td>
+</tr>
+<tr>
+  <td>Cladistic</td>
+  <td width = "300">Having to do with Cladistic taxonomy, a system of taxonomy that focuses on common ancestors and evolutionary relationships. This is different from Linnaean taxonomy.
+</tr>
+</table>
 
 
 
