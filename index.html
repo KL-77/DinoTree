@@ -17,6 +17,14 @@ body {
   color: white;
   letter-spacing: 3px;
   font-size: 60;
+  animation-name:thebanner;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+@keyframe thebanner {
+  0%   {background: linear-gradient(to top right, #0099ff 0%, #00c100 100%);}
+  50%   {background: linear-gradient(to top right, #00c100 0%, #0099ff 100%);}
+  100%   {background: linear-gradient(to top right, #0099ff 0%, #00c100 100%);}
 }
 .container {
   margin: 50px;
