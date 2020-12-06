@@ -1,1 +1,2 @@
 # DinoTree
+We all know at least a little about dinosaurs, a diverse, amazing type of animal that existed from around 240 to 65 million years ago. The classification of the dinosaurs is very complicated. For those dinosaur enthusiasts who are eager to learn about dinosaur taxonomy, but simply cannot understand the huge nested relationships that appear, DinoTree provides a simple but accurate dinosaur classification chart.
